@@ -1,0 +1,266 @@
+
+
+@font-face {
+    font-family: 'SF Compact Display';
+    src: url('SFCompactDisplay-Ultralight.woff2') format('woff2'),
+        url('SFCompactDisplay-Ultralight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Compact Display';
+    src: url('SFCompactDisplay-Medium.woff2') format('woff2'),
+        url('SFCompactDisplay-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Compact Display';
+    src: url('SFCompactDisplay-Heavy.woff2') format('woff2'),
+        url('SFCompactDisplay-Heavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Compact Display';
+    src: url('SFCompactDisplay-Thin.woff2') format('woff2'),
+        url('SFCompactDisplay-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Compact Display';
+    src: url('SFCompactDisplay-Bold.woff2') format('woff2'),
+        url('SFCompactDisplay-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Compact Display';
+    src: url('SFCompactDisplay-Light.woff2') format('woff2'),
+        url('SFCompactDisplay-Light.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Compact Display';
+    src: url('SFCompactDisplay-Black.woff2') format('woff2'),
+        url('SFCompactDisplay-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Compact Display';
+    src: url('SFCompactDisplay-Semibold.woff2') format('woff2'),
+        url('SFCompactDisplay-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Compact Display';
+    src: url('SFCompactDisplay-Regular.woff2') format('woff2'),
+        url('SFCompactDisplay-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'San Francisco Pro';
+    src: local('San Francisco Pro Display Bold'), local('San-Francisco-Pro-Display-Bold'),
+        url('SFProDisplay-Bold.woff2') format('woff2'),
+        url('SFProDisplay-Bold.woff') format('woff'),
+        url('SFProDisplay-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'San Francisco Pro';
+    src: local('San Francisco Pro Display Medium'), local('San-Francisco-Pro-Display-Medium'),
+        url('SFProDisplay-Medium.woff2') format('woff2'),
+        url('SFProDisplay-Medium.woff') format('woff'),
+        url('SFProDisplay-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'San Francisco Pro';
+    src: local('San Francisco Pro Display Light'), local('San-Francisco-Pro-Display-Light'),
+        url('SFProDisplay-Light.woff2') format('woff2'),
+        url('SFProDisplay-Light.woff') format('woff'),
+        url('SFProDisplay-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+  }
+
+
+  @media (max-width: 576px) {
+    .container {
+      max-width: 540px;
+    }
+    body{
+        overflow: visible !important;
+    }
+    .right{
+        overflow-x: hidden;
+    }
+  }
+
+
+  @media (min-width: 576px) {
+    .container {
+      max-width: 540px;
+    }
+    body{
+        overflow: visible !important;
+    }
+    .right{
+        overflow-x: hidden;
+    }
+    .copy{
+        justify-content: center;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .container {
+      max-width: 540px;
+    }
+    body{
+        overflow: visible !important;
+    }
+    .left{
+        height: 100vh;
+    }
+  }
+
+
+  
+
+
+body{
+    overflow: hidden;
+    .left{
+        .videoBG{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        img{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 40%;
+        }
+    }
+
+    .right{
+        background: #121212;
+        h1{
+            font-family: 'San Francisco Pro';
+            color: #ECECEC;
+            font-size: 40px;
+            text-transform: uppercase;
+            font-weight: 700;
+            line-height: 1.2em;
+            margin-left: 30px   ;
+            margin-top: 50px;
+    }
+    h4{
+        font-family: 'San Francisco Pro';
+        color: #ECECEC;
+            font-size: 23px;
+            font-weight: 500;
+            line-height: 1.2em;
+            margin-left: 30px;
+            margin-top: 40px;
+    }
+    .info{
+        margin-top: 65px;
+        .contact{
+            margin-left: 30px; 
+            h6{
+                font-family: 'San Francisco Pro';
+                color: #ECECEC;
+                font-size: 21px;
+                font-weight: 500;
+               }
+               p{
+                font-family: 'San Francisco Pro';
+                color: #ECECEC;
+                font-weight: 300;
+                letter-spacing: .025em;
+                font-size: 18px;
+                width: 176px;
+                margin-top: 24px;
+               }
+               a{
+                img{
+                 margin-right: 10px;
+                 margin-top: 24px;
+                }
+     
+            }
+        }
+        .contact2{
+            margin-left: 30px; 
+            h6{
+                font-family: 'San Francisco Pro';
+                color: #ECECEC;
+                font-size: 21px;
+                font-weight: 500;
+               }
+               p{
+                font-family: 'San Francisco Pro';
+                color: #ECECEC;
+                font-weight: 300;
+                letter-spacing: .025em;
+                font-size: 18px;
+                width: 176px;
+                margin-top: 24px;
+               }
+               a{
+                img{
+                 margin-right: 10px;
+                 margin-top: 24px;
+                }
+     
+            }
+        }
+    }
+    .copy{
+        margin-left: 30px; 
+        h5{
+            font-family: 'SF Compact Display';
+      font-weight: 200;
+      font-size: 14px;
+      color: #BFBFBF;
+      margin-top: 50px;
+        }
+        img{
+            width: 35px;
+            color: #BFBFBF;
+  
+        }
+    }
+    }
+    
+}
+
+
+
+
+
+
+  
+
